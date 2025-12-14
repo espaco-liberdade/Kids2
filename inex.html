@@ -1,0 +1,1187 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2: Esguicha, Escova e Lava!</title>
+    
+    <style>
+        /* Importando fontes do Google */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+        /* Estilos específicos para a aula, encapsulados pelo ID #apostila-aula-kids-2 */
+        #apostila-aula-kids-2 { 
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #3a3a3a;
+            line-height: 1.7; 
+            background-color: #ffffff;
+            padding: 25px; 
+            border: 1px solid #e0e0e0;
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        #apostila-aula-kids-2 h1 { 
+            color: #3498db; /* Azul para o tema de água/banheiro */
+            border-bottom: 4px solid #1abc9c; /* Verde água */
+            padding-bottom: 15px;
+            font-size: 28px; 
+            margin-top: 0; 
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Fredoka One', cursive;
+            letter-spacing: 1px;
+        }
+
+        #apostila-aula-kids-2 h2 { 
+            color: #2980b9;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 24px; 
+            border-bottom: 2px solid #aed6f1;
+            padding-bottom: 10px;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-2 h3 { 
+            color: #16a085;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 20px; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        #apostila-aula-kids-2 h4 { 
+            color: #27ae60;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px; 
+            font-weight: 600;
+        }
+
+        #apostila-aula-kids-2 table.vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); 
+            font-size: 14px;
+            border-radius: 8px;
+            overflow: hidden; 
+        }
+
+        #apostila-aula-kids-2 .vocab-table th, 
+        #apostila-aula-kids-2 .vocab-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        #apostila-aula-kids-2 .vocab-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #apostila-aula-kids-2 .vocab-table tr:nth-child(even) {
+            background-color: #f4f6f7; 
+        }
+
+        #apostila-aula-kids-2 .vocab-table tr:hover {
+            background-color: #eaf2f8;
+        }
+
+        #apostila-aula-kids-2 .nota-dica { 
+            background-color: #e8f8f5; 
+            border-left: 5px solid #1abc9c; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        #apostila-aula-kids-2 .nota-dica h4 {
+            color: #117a65;
+            margin-top: 0;
+            font-size: 17px; 
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-2 .secao-pratica { 
+            background-color: #eaf2f8; 
+            border-left: 5px solid #3498db; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #apostila-aula-kids-2 .secao-pratica h3 {
+            color: #2980b9; 
+            margin-top: 0;
+            font-size: 20px; 
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-2 code, 
+        #apostila-aula-kids-2 .ipa-symbol { 
+            background-color: #f0e6ff;
+            padding: 2px 6px; 
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad;
+            font-size: 0.95em;
+            border: 1px solid #d2b4de;
+        }
+
+        #apostila-aula-kids-2 .emoji-small { font-size: 1em; } 
+        #apostila-aula-kids-2 .emoji-medium { font-size: 1.3em; }
+        #apostila-aula-kids-2 .emoji-large { font-size: 1.6em; }
+
+        #apostila-aula-kids-2 .vocab-table .ipa-column {
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad; 
+            font-weight: bold;
+            font-size: 0.9em;
+            display: block; 
+            margin-bottom: 3px;
+        }
+        
+        #apostila-aula-kids-2 .ipa-phrase-block {
+            display: block; 
+            font-size: 0.85em;
+            margin-top: 4px; 
+            margin-bottom: 8px;
+        }
+        #apostila-aula-kids-2 .ipa-phrase-block code { 
+            background-color: #f0e6ff;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad;
+            border: 1px solid #d2b4de;
+        }
+
+        #apostila-aula-kids-2 .example-word {
+            font-weight: bold;
+            color: #2980b9; 
+        }
+        
+        /* Estilo para a tradução nas tabelas */
+        #apostila-aula-kids-2 .translation-in-cell {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        #apostila-aula-kids-2 .theme-intro-kids { 
+            background-color: #eaf2f8; 
+            border: 2px dashed #3498db; 
+            padding: 15px; 
+            margin-bottom: 25px; 
+            border-radius: 10px;
+            text-align: center;
+            font-style: italic;
+            font-size: 17px; 
+        }
+        #apostila-aula-kids-2 .theme-intro-kids p {
+            margin: 0;
+            color: #21618c; 
+        }
+
+        /* BOTOES DE AUDIO */
+        #apostila-aula-kids-2 .btn-container {
+            white-space: nowrap;
+            margin-top: 5px;
+        }
+
+        /* Botão Original (Link externo) */
+        #apostila-aula-kids-2 .audio-link { 
+            background-color: #1abc9c; 
+            color: white !important; 
+            padding: 4px 8px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 0.85em; 
+            margin-right: 3px; 
+            transition: background-color 0.2s;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+        #apostila-aula-kids-2 .audio-link:hover {
+            background-color: #16a085; 
+        }
+
+        /* Botão Novo (Play Inline) */
+        #apostila-aula-kids-2 .inline-play-btn { 
+            background-color: #2ecc71; /* Verde */
+            color: white !important; 
+            padding: 4px 8px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 0.85em; 
+            transition: background-color 0.2s;
+            display: inline-block; 
+        }
+        #apostila-aula-kids-2 .inline-play-btn:hover {
+            background-color: #27ae60; 
+        }
+
+        #apostila-aula-kids-2 .exercise-list {
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+
+        #apostila-aula-kids-2 .exercise-list li {
+            margin-bottom: 15px;
+            padding-left: 25px; 
+            position: relative;
+        }
+
+        #apostila-aula-kids-2 .exercise-list li::before {
+            content: "💧"; /* Emoji de gota para o tema */
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        #apostila-aula-kids-2 p, 
+        #apostila-aula-kids-2 ul, 
+        #apostila-aula-kids-2 ol,
+        #apostila-aula-kids-2 li {
+            margin: 0 0 1em 0; 
+            padding: 0; 
+            font-size: 1em; 
+            line-height: 1.7; 
+        }
+        #apostila-aula-kids-2 ul ul, 
+        #apostila-aula-kids-2 ol ol,
+        #apostila-aula-kids-2 ul ol,
+        #apostila-aula-kids-2 ol ul { 
+            margin-left: 20px; 
+            margin-top: 0.5em; 
+        }
+        #apostila-aula-kids-2 .exercise-list {
+             margin-left: 0; 
+        }
+
+        #apostila-aula-kids-2 .character-portuguese-phonetics {
+            font-size: 0.9em; 
+            color: #2E7D32;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            display: block; 
+            margin-top: 2px; 
+            margin-bottom: 2px; 
+        }
+        
+        #apostila-aula-kids-2 .vocab-table td .character-portuguese-phonetics {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        #apostila-aula-kids-2 .secao-pratica .exercise-list p,
+        #apostila-aula-kids-2 .secao-pratica .exercise-list li {
+            margin-bottom: 8px; 
+        }
+        #apostila-aula-kids-2 .secao-pratica .exercise-list .ipa-phrase-block {
+            margin-top: 2px; 
+            margin-bottom: 10px; 
+        }
+        #apostila-aula-kids-2 .dialogue {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #fcfcfc;
+        }
+        #apostila-aula-kids-2 .dialogue p {
+            margin-bottom: 10px;
+        }
+        #apostila-aula-kids-2 .character {
+            font-weight: bold;
+            color: #3498db;
+        }
+        #apostila-aula-kids-2 .fill-in-blank {
+            display: inline-block;
+            width: 100px;
+            border-bottom: 2px solid #3498db;
+            margin: 0 5px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+
+<div id="apostila-aula-kids-2">
+    
+    <h1><span class="emoji-large">🦷</span> Aula 2: Esguicha, Escova e Lava! <span class="emoji-large">🧼</span><br />(Lesson 2: Squirt, Brush, and Wash!)</h1>
+
+    <!-- 1. SESSÃO DE INTRODUÇÃO -->
+    <div class="theme-intro-kids">
+        <p>Depois de acordar, é hora de ficar limpinho e cheiroso! ✨ Vamos para o banheiro deixar nosso rosto brilhando e nossos dentes fortes para dar um sorrisão! Preparado para a aventura da espuma e da água?</p>
+    </div>
+
+    <!-- 2. OBJETIVOS DA AULA -->
+    <div class="nota-dica">
+        <h4><span class="emoji-small">💡</span> Para os Adultos: Objetivos da Aula</h4>
+        <ul>
+            <li>Aprender vocabulário essencial do banheiro: <strong>toothbrush, toothpaste, soap, towel, mirror, sink</strong>.</li>
+            <li>Praticar frases de comando (imperativas) como: <strong>Brush your teeth!</strong> e <strong>Wash your face!</strong></li>
+            <li>Formular perguntas sobre higiene: <strong>Did you brush your teeth?</strong></li>
+            <li>Introduzir verbos de ação: <strong>to brush, to wash, to rinse, to dry, to put away</strong>.</li>
+            <li>Trabalhar a pronúncia do som "TH" /θ/ em <strong>toothbrush</strong> e <strong>toothpaste</strong>.</li>
+        </ul>
+    </div>
+
+    <!-- 3. SESSÃO DE VOCABULÁRIO -->
+    <h2><span class="emoji-medium">🛁</span> Vocabulário Rápido do Banheiro</h2>
+    <p>O que a gente usa para ficar limpinho? Vamos aprender os nomes mágicos de cada coisa!</p>
+
+    <table class="vocab-table">
+        <thead>
+            <tr>
+                <th>Inglês + Áudio</th>
+                <th>Tradução + Pronúncia</th>
+                <th>Inglês + Áudio</th>
+                <th>Tradução + Pronúncia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="example-word">Toothbrush</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toothbrush&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Toothbrush')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Escova de dentes<code class="ipa-column">/ˈtuːθbrʌʃ/</code><span class="character-portuguese-phonetics">(TÚTH-BRÃSH)</span></td>
+                
+                <td>
+                    <span class="example-word">Toothpaste</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toothpaste&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Toothpaste')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Pasta de dente<code class="ipa-column">/ˈtuːθpeɪst/</code><span class="character-portuguese-phonetics">(TÚTH-PÊIST)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Soap</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Soap&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Soap')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Sabonete<code class="ipa-column">/soʊp/</code><span class="character-portuguese-phonetics">(SÔUP)</span></td>
+                
+                <td>
+                    <span class="example-word">Water</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Water&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Water')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Água<code class="ipa-column">/ˈwɔːtər/</code><span class="character-portuguese-phonetics">(UÓ-TÃR)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Towel</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Towel&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Towel')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Toalha<code class="ipa-column">/ˈtaʊəl/</code><span class="character-portuguese-phonetics">(TÁ-UÃL)</span></td>
+                
+                <td>
+                    <span class="example-word">Sink</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Sink&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Sink')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Pia<code class="ipa-column">/sɪŋk/</code><span class="character-portuguese-phonetics">(SÍNK)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Mirror</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Mirror&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Mirror')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Espelho<code class="ipa-column">/ˈmɪrər/</code><span class="character-portuguese-phonetics">(MÍ-RÃR)</span></td>
+                
+                <td>
+                    <span class="example-word">Comb</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Comb&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Comb')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Pente<code class="ipa-column">/koʊm/</code><span class="character-portuguese-phonetics">(CÔUM)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Hairbrush</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Hairbrush&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Hairbrush')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Escova de cabelo<code class="ipa-column">/ˈhɛərbrʌʃ/</code><span class="character-portuguese-phonetics">(RÉR-BRÃSH)</span></td>
+                
+                <td>
+                    <span class="example-word">Shampoo</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Shampoo&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Shampoo')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Xampu<code class="ipa-column">/ʃæmˈpuː/</code><span class="character-portuguese-phonetics">(SHAM-PÚ)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Potty</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Potty&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Potty')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Penico<code class="ipa-column">/ˈpɒti/</code><span class="character-portuguese-phonetics">(PÓ-TI)</span></td>
+                
+                <td>
+                    <span class="example-word">Toilet</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toilet&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Toilet')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Vaso sanitário<code class="ipa-column">/ˈtɔɪlɪt/</code><span class="character-portuguese-phonetics">(TÓI-LET)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Toilet Paper</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toilet%20Paper&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Toilet Paper')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Papel higiênico<code class="ipa-column">/ˈtɔɪlɪt ˈpeɪpər/</code><span class="character-portuguese-phonetics">(TÓI-LET PÊI-PÃR)</span></td>
+                
+                <td>
+                    <span class="example-word">Dental Floss</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Dental%20Floss&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Dental Floss')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Fio dental<code class="ipa-column">/ˈdɛntəl flɒs/</code><span class="character-portuguese-phonetics">(DÉN-TAL FLÓS)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Bubbles</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bubbles&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Bubbles')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Bolhas (de sabão)<code class="ipa-column">/ˈbʌbəlz/</code><span class="character-portuguese-phonetics">(BÃ-BOLS)</span></td>
+                
+                <td>
+                    <span class="example-word">Face</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Face&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Face')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Rosto<code class="ipa-column">/feɪs/</code><span class="character-portuguese-phonetics">(FÊIS)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Hands</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Hands&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Hands')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Mãos<code class="ipa-column">/hændz/</code><span class="character-portuguese-phonetics">(RÉNDS)</span></td>
+                
+                <td>
+                    <span class="example-word">Teeth</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Teeth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Teeth')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Dentes<code class="ipa-column">/tiːθ/</code><span class="character-portuguese-phonetics">(TÍTH)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Tap / Faucet</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Tap%2C%20Faucet&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Tap, Faucet')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Torneira<code class="ipa-column">/tæp/ /ˈfɔːsɪt/</code><span class="character-portuguese-phonetics">(TÉP / FÓ-SET)</span></td>
+                
+                <td>
+                    <span class="example-word">Shower</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Shower&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Shower')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Chuveiro<code class="ipa-column">/ˈʃaʊər/</code><span class="character-portuguese-phonetics">(SHÁU-ER)</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 4. SESSÃO DE FRASES -->
+    <h2><span class="emoji-medium">📖</span> Nossas Frases de Ação no Banheiro</h2>
+    <p>Pratique o diálogo abaixo: o pai/mãe começa na coluna 1 e a criança responde na coluna 2.</p>
+
+    <table class="vocab-table">
+        <thead>
+            <tr>
+                <th style="width: 50%;">Frase do Guia (Pai/Mãe)</th>
+                <th style="width: 50%;">Resposta do Pequeno (Criança)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 1 -->
+            <tr>
+                <td>
+                    <span class="example-word">Brush your teeth!</span>
+                    <span class="translation-in-cell">(Escove seus dentes!)</span>
+                    <code class="ipa-column">/brʌʃ jʊər tiːθ/</code>
+                    <span class="character-portuguese-phonetics">(BRÃSH IÓR TÍTH)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Brush%20your%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Brush your teeth!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I will brush my teeth!</span>
+                    <span class="translation-in-cell">(Vou escovar meus dentes!)</span>
+                    <code class="ipa-column">/aɪ wɪl brʌʃ maɪ tiːθ/</code>
+                    <span class="character-portuguese-phonetics">(ÁI UÍL BRÃSH MÁI TÍTH!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20will%20brush%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I will brush my teeth!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 2 -->
+            <tr>
+                <td>
+                    <span class="example-word">Get your toothbrush.</span>
+                    <span class="translation-in-cell">(Pegue sua escova de dentes.)</span>
+                    <code class="ipa-column">/ɡɛt jʊər ˈtuːθbrʌʃ/</code>
+                    <span class="character-portuguese-phonetics">(GUÉT IÓR TÚTH-BRÃSH)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Get%20your%20toothbrush.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Get your toothbrush.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I have my toothbrush.</span>
+                    <span class="translation-in-cell">(Eu tenho minha escova.)</span>
+                    <code class="ipa-column">/aɪ hæv maɪ ˈtuːθbrʌʃ/</code>
+                    <span class="character-portuguese-phonetics">(ÁI RÉV MÁI TÚTH-BRÃSH)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20have%20my%20toothbrush.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I have my toothbrush.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 3 -->
+            <tr>
+                <td>
+                    <span class="example-word">Put toothpaste on it.</span>
+                    <span class="translation-in-cell">(Coloque pasta nela.)</span>
+                    <code class="ipa-column">/pʊt ˈtuːθpeɪst ɒn ɪt/</code>
+                    <span class="character-portuguese-phonetics">(PÚT TÚTH-PÊIST ÓN IT)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20toothpaste%20on%20it.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Put toothpaste on it.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Just a little bit!</span>
+                    <span class="translation-in-cell">(Só um pouquinho!)</span>
+                    <code class="ipa-column">/dʒʌst ə ˈlɪtəl bɪt/</code>
+                    <span class="character-portuguese-phonetics">(DJÂST A LÍ-TAL BIT!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Just%20a%20little%20bit!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Just a little bit!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+                <td>
+                    <span class="example-word">Rinse your mouth.</span>
+                    <span class="translation-in-cell">(Enxágue sua boca.)</span>
+                    <code class="ipa-column">/rɪns jʊər maʊθ/</code>
+                    <span class="character-portuguese-phonetics">(RINS IÓR MÁUTH)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Rinse%20your%20mouth.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Rinse your mouth.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Swish, swish, spit!</span>
+                    <span class="translation-in-cell">(Bochecha, bochecha, cospe!)</span>
+                    <code class="ipa-column">/swɪʃ swɪʃ spɪt/</code>
+                    <span class="character-portuguese-phonetics">(SUÍSH, SUÍSH, SPIT!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Swish%2C%20swish%2C%20spit!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Swish, swish, spit!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 5 -->
+            <tr>
+                <td>
+                    <span class="example-word">Did you brush well?</span>
+                    <span class="translation-in-cell">(Você escovou bem?)</span>
+                    <code class="ipa-column">/dɪd juː brʌʃ wɛl/</code>
+                    <span class="character-portuguese-phonetics">(DID IU BRÃSH UÉL?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Did%20you%20brush%20well%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Did you brush well?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes, look at my teeth!</span>
+                    <span class="translation-in-cell">(Sim, olhe meus dentes!)</span>
+                    <code class="ipa-column">/jɛs lʊk æt maɪ tiːθ/</code>
+                    <span class="character-portuguese-phonetics">(IÉS, LÚK ÉT MÁI TÍTH!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20look%20at%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes, look at my teeth!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 6 -->
+            <tr>
+                <td>
+                    <span class="example-word">Spit it out. Don't swallow.</span>
+                    <span class="translation-in-cell">(Cuspa. Não engula.)</span>
+                    <code class="ipa-column">/spɪt ɪt aʊt doʊnt ˈswɒloʊ/</code>
+                    <span class="character-portuguese-phonetics">(SPIT IT ÁUT. DÔUNT SUÓ-LOU.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Spit%20it%20out.%20Don't%20swallow.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Spit it out. Don\'t swallow.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I spit it in the sink.</span>
+                    <span class="translation-in-cell">(Eu cuspi na pia.)</span>
+                    <code class="ipa-column">/aɪ spɪt ɪt ɪn ðə sɪŋk/</code>
+                    <span class="character-portuguese-phonetics">(ÁI SPIT IT IN DÃ SÍNK.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20spit%20it%20in%20the%20sink.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I spit it in the sink.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 7 -->
+            <tr>
+                <td>
+                    <span class="example-word">Wash your face.</span>
+                    <span class="translation-in-cell">(Lave seu rosto.)</span>
+                    <code class="ipa-column">/wɒʃ jʊər feɪs/</code>
+                    <span class="character-portuguese-phonetics">(UÓSH IÓR FÊIS)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wash%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Wash your face.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">The water is nice!</span>
+                    <span class="translation-in-cell">(A água está boa!)</span>
+                    <code class="ipa-column">/ðə ˈwɔːtər ɪz naɪs/</code>
+                    <span class="character-portuguese-phonetics">(DÃ UÓ-TÃR ÍZ NÁIS!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=The%20water%20is%20nice!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('The water is nice!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 8 -->
+            <tr>
+                <td>
+                    <span class="example-word">Get the soap, please.</span>
+                    <span class="translation-in-cell">(Pegue o sabonete, por favor.)</span>
+                    <code class="ipa-column">/ɡɛt ðə soʊp pliːz/</code>
+                    <span class="character-portuguese-phonetics">(GUÉT DÃ SÔUP, PLÍZ.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Get%20the%20soap%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Get the soap, please.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Here is the soap.</span>
+                    <span class="translation-in-cell">(Aqui está o sabonete.)</span>
+                    <code class="ipa-column">/hɪər ɪz ðə soʊp/</code>
+                    <span class="character-portuguese-phonetics">(RÍAR ÍZ DÃ SÔUP.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Here%20is%20the%20soap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Here is the soap.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 9 -->
+            <tr>
+                <td>
+                    <span class="example-word">Dry your face.</span>
+                    <span class="translation-in-cell">(Seque seu rosto.)</span>
+                    <code class="ipa-column">/draɪ jʊər feɪs/</code>
+                    <span class="character-portuguese-phonetics">(DRÁI IÓR FÊIS)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Dry%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Dry your face.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I need a towel.</span>
+                    <span class="translation-in-cell">(Preciso de uma toalha.)</span>
+                    <code class="ipa-column">/aɪ niːd ə ˈtaʊəl/</code>
+                    <span class="character-portuguese-phonetics">(ÁI NÍD A TÁ-UÃL.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20need%20a%20towel.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I need a towel.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 10 -->
+            <tr>
+                <td>
+                    <span class="example-word">Look in the mirror!</span>
+                    <span class="translation-in-cell">(Olhe no espelho!)</span>
+                    <code class="ipa-column">/lʊk ɪn ðə ˈmɪrər/</code>
+                    <span class="character-portuguese-phonetics">(LÚK IN DÃ MÍ-RÃR!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Look%20in%20the%20mirror!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Look in the mirror!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I am clean and shiny!</span>
+                    <span class="translation-in-cell">(Estou limpo e brilhante!)</span>
+                    <code class="ipa-column">/aɪ æm kliːn ænd ˈʃaɪni/</code>
+                    <span class="character-portuguese-phonetics">(ÁI ÉM CLÍN ÉND SHÁI-NI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20am%20clean%20and%20shiny!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I am clean and shiny!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 11 -->
+            <tr>
+                <td>
+                    <span class="example-word">Use the dental floss.</span>
+                    <span class="translation-in-cell">(Use o fio dental.)</span>
+                    <code class="ipa-column">/juːz ðə ˈdɛntəl flɒs/</code>
+                    <span class="character-portuguese-phonetics">(IÚZ DÃ DÉN-TAL FLÓS.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Use%20the%20dental%20floss.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Use the dental floss.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Help me, please.</span>
+                    <span class="translation-in-cell">(Me ajude, por favor.)</span>
+                    <code class="ipa-column">/hɛlp miː pliːz/</code>
+                    <span class="character-portuguese-phonetics">(RÉLP MÍ, PLÍZ.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Help%20me%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Help me, please.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 12 -->
+            <tr>
+                <td>
+                    <span class="example-word">Put it away.</span>
+                    <span class="translation-in-cell">(Guarde-o.)</span>
+                    <code class="ipa-column">/pʊt ɪt əˈweɪ/</code>
+                    <span class="character-portuguese-phonetics">(PUT IT A-UÊI.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20it%20away.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Put it away.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Okay, I put it in the cup.</span>
+                    <span class="translation-in-cell">(Ok, coloquei no copo.)</span>
+                    <code class="ipa-column">/oʊˈkeɪ aɪ pʊt ɪt ɪn ðə kʌp/</code>
+                    <span class="character-portuguese-phonetics">(OKÊI, ÁI PUT IT IN DÃ CÃP.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20I%20put%20it%20in%20the%20cup.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Okay, I put it in the cup.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 13 -->
+            <tr>
+                <td>
+                    <span class="example-word">Turn on the tap.</span>
+                    <span class="translation-in-cell">(Abra a torneira.)</span>
+                    <code class="ipa-column">/tɜːrn ɒn ðə tæp/</code>
+                    <span class="character-portuguese-phonetics">(TÃRN ÓN DÃ TÉP.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Turn%20on%20the%20tap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Turn on the tap.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Water is running!</span>
+                    <span class="translation-in-cell">(A água está correndo!)</span>
+                    <code class="ipa-column">/ˈwɔːtər ɪz ˈrʌnɪŋ/</code>
+                    <span class="character-portuguese-phonetics">(UÓ-TÃR ÍZ RÃ-NIN!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Water%20is%20running!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Water is running!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 14 -->
+            <tr>
+                <td>
+                    <span class="example-word">Turn off the tap.</span>
+                    <span class="translation-in-cell">(Feche a torneira.)</span>
+                    <code class="ipa-column">/tɜːrn ɔːf ðə tæp/</code>
+                    <span class="character-portuguese-phonetics">(TÃRN ÓF DÃ TÉP.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Turn%20off%20the%20tap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Turn off the tap.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Let's save water!</span>
+                    <span class="translation-in-cell">(Vamos economizar água!)</span>
+                    <code class="ipa-column">/lɛts seɪv ˈwɔːtər/</code>
+                    <span class="character-portuguese-phonetics">(LÉTS SÊIV UÓ-TÃR!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Let's%20save%20water!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Let\'s save water!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 15 -->
+            <tr>
+                <td>
+                    <span class="example-word">Wash your hands.</span>
+                    <span class="translation-in-cell">(Lave suas mãos.)</span>
+                    <code class="ipa-column">/wɒʃ jʊər hændz/</code>
+                    <span class="character-portuguese-phonetics">(UÓSH IÓR RÉNDS.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wash%20your%20hands.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Wash your hands.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Scrub, scrub, scrub!</span>
+                    <span class="translation-in-cell">(Esfrega, esfrega, esfrega!)</span>
+                    <code class="ipa-column">/skrʌb skrʌb skrʌb/</code>
+                    <span class="character-portuguese-phonetics">(S-CRÃB, S-CRÃB, S-CRÃB!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Scrub%2C%20scrub%2C%20scrub!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Scrub, scrub, scrub!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 16 -->
+            <tr>
+                <td>
+                    <span class="example-word">Do you need to pee?</span>
+                    <span class="translation-in-cell">(Você precisa fazer xixi?)</span>
+                    <code class="ipa-column">/duː juː niːd tuː piː/</code>
+                    <span class="character-portuguese-phonetics">(DÚ IÚ NÍD TÚ PÍ?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Do%20you%20need%20to%20pee%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Do you need to pee?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">No, I don't.</span>
+                    <span class="translation-in-cell">(Não, não preciso.)</span>
+                    <code class="ipa-column">/noʊ aɪ doʊnt/</code>
+                    <span class="character-portuguese-phonetics">(NÔU, ÁI DÔUNT.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=No%2C%20I%20don't.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('No, I don\'t.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 17 -->
+            <tr>
+                <td>
+                    <span class="example-word">Do you need to poop?</span>
+                    <span class="translation-in-cell">(Você precisa fazer cocô?)</span>
+                    <code class="ipa-column">/duː juː niːd tuː puːp/</code>
+                    <span class="character-portuguese-phonetics">(DÚ IÚ NÍD TÚ PÚP?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Do%20you%20need%20to%20poop%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Do you need to poop?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes, I think so.</span>
+                    <span class="translation-in-cell">(Sim, eu acho que sim.)</span>
+                    <code class="ipa-column">/jɛs aɪ θɪŋk soʊ/</code>
+                    <span class="character-portuguese-phonetics">(IÉS, ÁI THÍNK SÔU.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20I%20think%20so.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes, I think so.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 18 -->
+            <tr>
+                <td>
+                    <span class="example-word">Flush the toilet.</span>
+                    <span class="translation-in-cell">(Dê a descarga.)</span>
+                    <code class="ipa-column">/flʌʃ ðə ˈtɔɪlɪt/</code>
+                    <span class="character-portuguese-phonetics">(FLÃSH DÃ TÓI-LET.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Flush%20the%20toilet.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Flush the toilet.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Bye bye, poop!</span>
+                    <span class="translation-in-cell">(Tchau tchau, cocô!)</span>
+                    <code class="ipa-column">/baɪ baɪ puːp/</code>
+                    <span class="character-portuguese-phonetics">(BÁI BÁI, PÚP!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bye%20bye%2C%20poop!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Bye bye, poop!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 19 -->
+            <tr>
+                <td>
+                    <span class="example-word">Comb your hair.</span>
+                    <span class="translation-in-cell">(Penteie seu cabelo.)</span>
+                    <code class="ipa-column">/koʊm jʊər hɛər/</code>
+                    <span class="character-portuguese-phonetics">(CÔUM IÓR RÉAR.)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Comb%20your%20hair.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Comb your hair.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I look nice!</span>
+                    <span class="translation-in-cell">(Eu estou bonito!)</span>
+                    <code class="ipa-column">/aɪ lʊk naɪs/</code>
+                    <span class="character-portuguese-phonetics">(ÁI LÚK NÁIS!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20look%20nice!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I look nice!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 20 -->
+            <tr>
+                <td>
+                    <span class="example-word">You smell so good!</span>
+                    <span class="translation-in-cell">(Você cheira tão bem!)</span>
+                    <code class="ipa-column">/juː smɛl soʊ ɡʊd/</code>
+                    <span class="character-portuguese-phonetics">(IÚ SMÉL SÔU GÚD!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=You%20smell%20so%20good!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('You smell so good!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Thank you, Mommy!</span>
+                    <span class="translation-in-cell">(Obrigado, mamãe!)</span>
+                    <code class="ipa-column">/θæŋk juː ˈmɒmi/</code>
+                    <span class="character-portuguese-phonetics">(THÉNK IÚ, MÓ-MI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Thank%20you%2C%20Mommy!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Thank you, Mommy!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 5. SESSÃO DE DIÁLOGOS -->
+    <h2><span class="emoji-medium">💬</span> Conversa no Banheiro</h2>
+    <p>Às vezes, escovar os dentes pode ser uma aventura! Vamos ver esse diálogo?</p>
+
+    <h3>Diálogo 1: A Missão Escova de Dentes</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Papai:</span> Okay, superhero! After breakfast, it's time for a mission! 
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20superhero!%20After%20breakfast%2C%20it's%20time%20for%20a%20mission!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Okay, superhero! After breakfast, it\'s time for a mission!')" class="inline-play-btn">▶️</button>
+            (Ok, super-herói! Depois do café, é hora de uma missão!)<br>
+            <span class="ipa-phrase-block"><code>/oʊˈkeɪ ˈsuːpərˌhɪroʊ ˈæftər ˈbrɛkfəst ɪts taɪm fɔːr ə ˈmɪʃən/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Filho(a):</span> A mission? What mission?
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=A%20mission%3F%20What%20mission%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('A mission? What mission?')" class="inline-play-btn">▶️</button>
+            (Uma missão? Que missão?)<br>
+            <span class="ipa-phrase-block"><code>/ə ˈmɪʃən wɒt ˈmɪʃən/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Papai:</span> Go brush your teeth!
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Go%20brush%20your%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Go brush your teeth!')" class="inline-play-btn">▶️</button>
+            (Vá escovar seus dentes!)<br>
+            <span class="ipa-phrase-block"><code>/ɡoʊ brʌʃ jʊər tiːθ/</code></span>
+        </p>
+    </div>
+    
+    <h3>Diálogo 2: A Fuga da Pasta de Dente</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Filho(a):</span> I don't want to!
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20don't%20want%20to!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('I don\'t want to!')" class="inline-play-btn">▶️</button>
+            (Eu não quero!)<br>
+            <span class="ipa-phrase-block"><code>/aɪ doʊnt wɒnt tuː/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Mamãe:</span> But the sugar bugs will have a party in your mouth! Let's get them!
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=But%20the%20sugar%20bugs%20will%20have%20a%20party%20in%20your%20mouth!%20Let's%20get%20them!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('But the sugar bugs will have a party in your mouth! Let\'s get them!')" class="inline-play-btn">▶️</button>
+            (Mas os bichinhos de açúcar vão fazer uma festa na sua boca! Vamos pegar eles!)<br>
+            <span class="ipa-phrase-block"><code>/bʌt ðə ˈʃʊɡər bʌɡz wɪl hæv ə ˈpɑːrti ɪn jʊər maʊθ lɛts ɡɛt ðɛm/</code></span>
+        </p>
+    </div>
+
+    <h3>Diálogo 3: O Rosto Brilhante</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Papai:</span> Okay, teeth are clean! Now, let's wash your face.
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20teeth%20are%20clean!%20Now%2C%20let's%20wash%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Okay, teeth are clean! Now, let\'s wash your face.')" class="inline-play-btn">▶️</button>
+            (Ok, dentes limpos! Agora, vamos lavar o rosto.)<br>
+            <span class="ipa-phrase-block"><code>/oʊˈkeɪ tiːθ ɑːr kliːn naʊ lɛts wɒʃ jʊər feɪs/</code></span>
+        </p>
+        
+        <p>
+            <span class="character">Filho(a):</span> With soap?
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=With%20soap%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('With soap?')" class="inline-play-btn">▶️</button>
+            (Com sabonete?)<br>
+            <span class="ipa-phrase-block"><code>/wɪð soʊp/</code></span>
+        </p>
+        
+        <p>
+            <span class="character">Papai:</span> Yes! And then dry with the big, fluffy towel!
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes!%20And%20then%20dry%20with%20the%20big%2C%20fluffy%20towel!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Yes! And then dry with the big, fluffy towel!')" class="inline-play-btn">▶️</button>
+            (Sim! E depois secar com a toalha grande e fofinha!)<br>
+            <span class="ipa-phrase-block"><code>/jɛs ænd ðɛn draɪ wɪð ðə bɪɡ ˈflʌfi ˈtaʊəl/</code></span>
+        </p>
+    </div>
+
+    <!-- 6. DICA DE PRONÚNCIA -->
+    <div class="nota-dica">
+        <h4><span class="emoji-small">🗣️</span> Dica de Pronúncia: O som do "TH" /θ/</h4>
+        <p>Este é um som super novo! Em <span class="example-word">toothbrush</span> e <span class="example-word">toothpaste</span>, o "th" não tem som de "t" nem de "f".</p>
+        <p>**O truque:** Coloque a pontinha da língua entre os dentes da frente e sopre o ar. É como um "s" com a língua presa! Vamos tentar?</p>
+        <ul>
+            <li>
+                <span class="example-word">Tooth</span> <span class="ipa-symbol">/tuːθ/</span> (TÚTH... com a língua entre os dentes) 
+                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Tooth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                <button onclick="playAudio('Tooth')" class="inline-play-btn">▶️</button>
+            </li>
+            <li>
+                <span class="example-word">Mouth</span> <span class="ipa-symbol">/maʊθ/</span> (MÁUTH... com a língua entre os dentes) 
+                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Mouth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                <button onclick="playAudio('Mouth')" class="inline-play-btn">▶️</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 7. VAMOS BRINCAR -->
+    <div class="secao-pratica">
+        <h3>Vamos Brincar e Aprender! 🎉</h3>
+        <h4>Guerra contra o Monstrinho da Cárie!</h4>
+        <p>O adulto vira o Monstrinho da Cárie que quer sujar os dentes! A criança é a super-heroína que precisa se defender com a <span class="example-word">toothbrush</span> e a <span class="example-word">toothpaste</span>! </p>
+        <ul class="exercise-list">
+            <li>
+                <p>Monstrinho diz: "I want to make your teeth dirty!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20want%20to%20make%20your%20teeth%20dirty!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('I want to make your teeth dirty!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/aɪ wɒnt tuː meɪk jʊər tiːθ ˈdɜːrti/</code></span>
+                    (Eu quero deixar seus dentes sujos!)
+                </p>
+            </li>
+            <li>
+                <p>Herói/Heroína responde: "No! I will <span class="example-word">brush my teeth</span>!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=No!%20I%20will%20brush%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('No! I will brush my teeth!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/noʊ aɪ wɪl brʌʃ maɪ tiːθ/</code></span>
+                    (Não! Eu vou escovar meus dentes!) - e começa a escovar de verdade!
+                </p>
+            </li>
+            <li>
+                <p>Monstrinho diz: "Oh no! Too much foam!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Oh%20no!%20Too%20much%20foam!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('Oh no! Too much foam!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/oʊ noʊ tuː mʌtʃ foʊm/</code></span>
+                    (Ah não! Muita espuma!) - e foge!
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 8. PARABÉNS -->
+    <h3>Parabéns, Dentes Brilhantes! ✨</h3>
+    <p>Missão cumprida! Seus dentes estão limpinhos e protegidos. E seu rosto está pronto para sorrir o dia todo! Você é um expert em ficar cheiroso em inglês.</p>
+    <p><strong>Agora, que tal praticar mais?</strong> No seu material de atividades, você encontrará desenhos para <strong>colorir</strong> 🎨, labirintos para levar a <span class="example-word">toothbrush</span> até o dente e jogos de <strong>ligar</strong> os objetos do banheiro. Vá fazer suas atividades enquanto o papai/mamãe prepara a próxima aventura! Até a próxima aula!</p>
+
+</div>
+
+<!-- Script para fazer o botão de áudio Inline funcionar -->
+<script>
+    function playAudio(text) {
+        // Cria o link do Google TTS
+        var audioUrl = "https://translate.google.com/translate_tts?ie=UTF-8&q=" + encodeURIComponent(text) + "&tl=en&client=tw-ob";
+        
+        // Cria um novo objeto de áudio e toca
+        var audio = new Audio(audioUrl);
+        audio.play().catch(function(error) {
+            console.log("Erro ao reproduzir áudio: " + error);
+            alert("Não foi possível reproduzir o áudio automaticamente. Por favor, use o botão laranja (🔗).");
+        });
+    }
+</script>
+
+</body>
+</html>
