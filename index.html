@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -198,35 +197,34 @@
             color: #21618c; 
         }
 
-        /* BOTOES DE AUDIO */
+        /* BOTOES DE AUDIO - NOVOS */
         #apostila-aula-kids-2 .btn-container {
             white-space: nowrap;
             margin-top: 5px;
         }
 
-        /* Botão Original (Link externo) */
-        #apostila-aula-kids-2 .audio-link { 
-            background-color: #1abc9c; 
+        /* Botão Play Normal (Verde) */
+        #apostila-aula-kids-2 .play-btn { 
+            background-color: #2ecc71; 
             color: white !important; 
-            padding: 4px 8px; 
+            padding: 4px 10px; 
             border: none;
             border-radius: 20px; 
             cursor: pointer;
             font-size: 0.85em; 
-            margin-right: 3px; 
+            margin-right: 5px; 
             transition: background-color 0.2s;
-            text-decoration: none; 
             display: inline-block; 
         }
-        #apostila-aula-kids-2 .audio-link:hover {
-            background-color: #16a085; 
+        #apostila-aula-kids-2 .play-btn:hover {
+            background-color: #27ae60; 
         }
 
-        /* Botão Novo (Play Inline) */
-        #apostila-aula-kids-2 .inline-play-btn { 
-            background-color: #2ecc71; /* Verde */
+        /* Botão Play Lento (Laranja) */
+        #apostila-aula-kids-2 .slow-btn { 
+            background-color: #f39c12; 
             color: white !important; 
-            padding: 4px 8px; 
+            padding: 4px 10px; 
             border: none;
             border-radius: 20px; 
             cursor: pointer;
@@ -234,8 +232,8 @@
             transition: background-color 0.2s;
             display: inline-block; 
         }
-        #apostila-aula-kids-2 .inline-play-btn:hover {
-            background-color: #27ae60; 
+        #apostila-aula-kids-2 .slow-btn:hover {
+            background-color: #e67e22; 
         }
 
         #apostila-aula-kids-2 .exercise-list {
@@ -365,8 +363,8 @@
                 <td>
                     <span class="example-word">Toothbrush</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toothbrush&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Toothbrush')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Toothbrush')" class="play-btn">▶️</button>
+                        <button onclick="speak('Toothbrush', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Escova de dentes<code class="ipa-column">/ˈtuːθbrʌʃ/</code><span class="character-portuguese-phonetics">(TÚTH-BRÃSH)</span></td>
@@ -374,8 +372,8 @@
                 <td>
                     <span class="example-word">Toothpaste</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toothpaste&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Toothpaste')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Toothpaste')" class="play-btn">▶️</button>
+                        <button onclick="speak('Toothpaste', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Pasta de dente<code class="ipa-column">/ˈtuːθpeɪst/</code><span class="character-portuguese-phonetics">(TÚTH-PÊIST)</span></td>
@@ -384,8 +382,8 @@
                 <td>
                     <span class="example-word">Soap</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Soap&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Soap')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Soap')" class="play-btn">▶️</button>
+                        <button onclick="speak('Soap', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Sabonete<code class="ipa-column">/soʊp/</code><span class="character-portuguese-phonetics">(SÔUP)</span></td>
@@ -393,8 +391,8 @@
                 <td>
                     <span class="example-word">Water</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Water&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Water')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Water')" class="play-btn">▶️</button>
+                        <button onclick="speak('Water', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Água<code class="ipa-column">/ˈwɔːtər/</code><span class="character-portuguese-phonetics">(UÓ-TÃR)</span></td>
@@ -403,8 +401,8 @@
                 <td>
                     <span class="example-word">Towel</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Towel&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Towel')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Towel')" class="play-btn">▶️</button>
+                        <button onclick="speak('Towel', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Toalha<code class="ipa-column">/ˈtaʊəl/</code><span class="character-portuguese-phonetics">(TÁ-UÃL)</span></td>
@@ -412,8 +410,8 @@
                 <td>
                     <span class="example-word">Sink</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Sink&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Sink')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Sink')" class="play-btn">▶️</button>
+                        <button onclick="speak('Sink', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Pia<code class="ipa-column">/sɪŋk/</code><span class="character-portuguese-phonetics">(SÍNK)</span></td>
@@ -422,8 +420,8 @@
                 <td>
                     <span class="example-word">Mirror</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Mirror&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Mirror')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Mirror')" class="play-btn">▶️</button>
+                        <button onclick="speak('Mirror', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Espelho<code class="ipa-column">/ˈmɪrər/</code><span class="character-portuguese-phonetics">(MÍ-RÃR)</span></td>
@@ -431,8 +429,8 @@
                 <td>
                     <span class="example-word">Comb</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Comb&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Comb')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Comb')" class="play-btn">▶️</button>
+                        <button onclick="speak('Comb', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Pente<code class="ipa-column">/koʊm/</code><span class="character-portuguese-phonetics">(CÔUM)</span></td>
@@ -441,8 +439,8 @@
                 <td>
                     <span class="example-word">Hairbrush</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Hairbrush&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Hairbrush')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Hairbrush')" class="play-btn">▶️</button>
+                        <button onclick="speak('Hairbrush', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Escova de cabelo<code class="ipa-column">/ˈhɛərbrʌʃ/</code><span class="character-portuguese-phonetics">(RÉR-BRÃSH)</span></td>
@@ -450,8 +448,8 @@
                 <td>
                     <span class="example-word">Shampoo</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Shampoo&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Shampoo')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Shampoo')" class="play-btn">▶️</button>
+                        <button onclick="speak('Shampoo', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Xampu<code class="ipa-column">/ʃæmˈpuː/</code><span class="character-portuguese-phonetics">(SHAM-PÚ)</span></td>
@@ -460,8 +458,8 @@
                 <td>
                     <span class="example-word">Potty</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Potty&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Potty')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Potty')" class="play-btn">▶️</button>
+                        <button onclick="speak('Potty', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Penico<code class="ipa-column">/ˈpɒti/</code><span class="character-portuguese-phonetics">(PÓ-TI)</span></td>
@@ -469,8 +467,8 @@
                 <td>
                     <span class="example-word">Toilet</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toilet&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Toilet')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Toilet')" class="play-btn">▶️</button>
+                        <button onclick="speak('Toilet', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Vaso sanitário<code class="ipa-column">/ˈtɔɪlɪt/</code><span class="character-portuguese-phonetics">(TÓI-LET)</span></td>
@@ -479,8 +477,8 @@
                 <td>
                     <span class="example-word">Toilet Paper</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Toilet%20Paper&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Toilet Paper')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Toilet Paper')" class="play-btn">▶️</button>
+                        <button onclick="speak('Toilet Paper', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Papel higiênico<code class="ipa-column">/ˈtɔɪlɪt ˈpeɪpər/</code><span class="character-portuguese-phonetics">(TÓI-LET PÊI-PÃR)</span></td>
@@ -488,8 +486,8 @@
                 <td>
                     <span class="example-word">Dental Floss</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Dental%20Floss&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Dental Floss')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Dental Floss')" class="play-btn">▶️</button>
+                        <button onclick="speak('Dental Floss', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Fio dental<code class="ipa-column">/ˈdɛntəl flɒs/</code><span class="character-portuguese-phonetics">(DÉN-TAL FLÓS)</span></td>
@@ -498,8 +496,8 @@
                 <td>
                     <span class="example-word">Bubbles</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bubbles&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Bubbles')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Bubbles')" class="play-btn">▶️</button>
+                        <button onclick="speak('Bubbles', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Bolhas (de sabão)<code class="ipa-column">/ˈbʌbəlz/</code><span class="character-portuguese-phonetics">(BÃ-BOLS)</span></td>
@@ -507,8 +505,8 @@
                 <td>
                     <span class="example-word">Face</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Face&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Face')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Face')" class="play-btn">▶️</button>
+                        <button onclick="speak('Face', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Rosto<code class="ipa-column">/feɪs/</code><span class="character-portuguese-phonetics">(FÊIS)</span></td>
@@ -517,8 +515,8 @@
                 <td>
                     <span class="example-word">Hands</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Hands&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Hands')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Hands')" class="play-btn">▶️</button>
+                        <button onclick="speak('Hands', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Mãos<code class="ipa-column">/hændz/</code><span class="character-portuguese-phonetics">(RÉNDS)</span></td>
@@ -526,8 +524,8 @@
                 <td>
                     <span class="example-word">Teeth</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Teeth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Teeth')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Teeth')" class="play-btn">▶️</button>
+                        <button onclick="speak('Teeth', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Dentes<code class="ipa-column">/tiːθ/</code><span class="character-portuguese-phonetics">(TÍTH)</span></td>
@@ -536,8 +534,8 @@
                 <td>
                     <span class="example-word">Tap / Faucet</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Tap%2C%20Faucet&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Tap, Faucet')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Tap, Faucet')" class="play-btn">▶️</button>
+                        <button onclick="speak('Tap, Faucet', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Torneira<code class="ipa-column">/tæp/ /ˈfɔːsɪt/</code><span class="character-portuguese-phonetics">(TÉP / FÓ-SET)</span></td>
@@ -545,8 +543,8 @@
                 <td>
                     <span class="example-word">Shower</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Shower&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Shower')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Shower')" class="play-btn">▶️</button>
+                        <button onclick="speak('Shower', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>Chuveiro<code class="ipa-column">/ˈʃaʊər/</code><span class="character-portuguese-phonetics">(SHÁU-ER)</span></td>
@@ -574,8 +572,8 @@
                     <code class="ipa-column">/brʌʃ jʊər tiːθ/</code>
                     <span class="character-portuguese-phonetics">(BRÃSH IÓR TÍTH)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Brush%20your%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Brush your teeth!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Brush your teeth!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Brush your teeth!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -584,8 +582,8 @@
                     <code class="ipa-column">/aɪ wɪl brʌʃ maɪ tiːθ/</code>
                     <span class="character-portuguese-phonetics">(ÁI UÍL BRÃSH MÁI TÍTH!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20will%20brush%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I will brush my teeth!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I will brush my teeth!')" class="play-btn">▶️</button>
+                        <button onclick="speak('I will brush my teeth!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -597,8 +595,8 @@
                     <code class="ipa-column">/ɡɛt jʊər ˈtuːθbrʌʃ/</code>
                     <span class="character-portuguese-phonetics">(GUÉT IÓR TÚTH-BRÃSH)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Get%20your%20toothbrush.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Get your toothbrush.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Get your toothbrush.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Get your toothbrush.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -607,8 +605,8 @@
                     <code class="ipa-column">/aɪ hæv maɪ ˈtuːθbrʌʃ/</code>
                     <span class="character-portuguese-phonetics">(ÁI RÉV MÁI TÚTH-BRÃSH)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20have%20my%20toothbrush.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I have my toothbrush.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I have my toothbrush.')" class="play-btn">▶️</button>
+                        <button onclick="speak('I have my toothbrush.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -620,8 +618,8 @@
                     <code class="ipa-column">/pʊt ˈtuːθpeɪst ɒn ɪt/</code>
                     <span class="character-portuguese-phonetics">(PÚT TÚTH-PÊIST ÓN IT)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20toothpaste%20on%20it.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Put toothpaste on it.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Put toothpaste on it.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Put toothpaste on it.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -630,8 +628,8 @@
                     <code class="ipa-column">/dʒʌst ə ˈlɪtəl bɪt/</code>
                     <span class="character-portuguese-phonetics">(DJÂST A LÍ-TAL BIT!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Just%20a%20little%20bit!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Just a little bit!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Just a little bit!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Just a little bit!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -643,8 +641,8 @@
                     <code class="ipa-column">/rɪns jʊər maʊθ/</code>
                     <span class="character-portuguese-phonetics">(RINS IÓR MÁUTH)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Rinse%20your%20mouth.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Rinse your mouth.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Rinse your mouth.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Rinse your mouth.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -653,8 +651,8 @@
                     <code class="ipa-column">/swɪʃ swɪʃ spɪt/</code>
                     <span class="character-portuguese-phonetics">(SUÍSH, SUÍSH, SPIT!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Swish%2C%20swish%2C%20spit!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Swish, swish, spit!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Swish, swish, spit!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Swish, swish, spit!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -666,8 +664,8 @@
                     <code class="ipa-column">/dɪd juː brʌʃ wɛl/</code>
                     <span class="character-portuguese-phonetics">(DID IU BRÃSH UÉL?)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Did%20you%20brush%20well%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Did you brush well?')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Did you brush well?')" class="play-btn">▶️</button>
+                        <button onclick="speak('Did you brush well?', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -676,8 +674,8 @@
                     <code class="ipa-column">/jɛs lʊk æt maɪ tiːθ/</code>
                     <span class="character-portuguese-phonetics">(IÉS, LÚK ÉT MÁI TÍTH!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20look%20at%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Yes, look at my teeth!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Yes, look at my teeth!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Yes, look at my teeth!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -689,8 +687,8 @@
                     <code class="ipa-column">/spɪt ɪt aʊt doʊnt ˈswɒloʊ/</code>
                     <span class="character-portuguese-phonetics">(SPIT IT ÁUT. DÔUNT SUÓ-LOU.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Spit%20it%20out.%20Don't%20swallow.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Spit it out. Don\'t swallow.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Spit it out. Don\'t swallow.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Spit it out. Don\'t swallow.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -699,8 +697,8 @@
                     <code class="ipa-column">/aɪ spɪt ɪt ɪn ðə sɪŋk/</code>
                     <span class="character-portuguese-phonetics">(ÁI SPIT IT IN DÃ SÍNK.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20spit%20it%20in%20the%20sink.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I spit it in the sink.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I spit it in the sink.')" class="play-btn">▶️</button>
+                        <button onclick="speak('I spit it in the sink.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -712,8 +710,8 @@
                     <code class="ipa-column">/wɒʃ jʊər feɪs/</code>
                     <span class="character-portuguese-phonetics">(UÓSH IÓR FÊIS)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wash%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Wash your face.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Wash your face.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Wash your face.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -722,8 +720,8 @@
                     <code class="ipa-column">/ðə ˈwɔːtər ɪz naɪs/</code>
                     <span class="character-portuguese-phonetics">(DÃ UÓ-TÃR ÍZ NÁIS!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=The%20water%20is%20nice!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('The water is nice!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('The water is nice!')" class="play-btn">▶️</button>
+                        <button onclick="speak('The water is nice!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -735,8 +733,8 @@
                     <code class="ipa-column">/ɡɛt ðə soʊp pliːz/</code>
                     <span class="character-portuguese-phonetics">(GUÉT DÃ SÔUP, PLÍZ.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Get%20the%20soap%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Get the soap, please.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Get the soap, please.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Get the soap, please.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -745,8 +743,8 @@
                     <code class="ipa-column">/hɪər ɪz ðə soʊp/</code>
                     <span class="character-portuguese-phonetics">(RÍAR ÍZ DÃ SÔUP.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Here%20is%20the%20soap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Here is the soap.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Here is the soap.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Here is the soap.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -758,8 +756,8 @@
                     <code class="ipa-column">/draɪ jʊər feɪs/</code>
                     <span class="character-portuguese-phonetics">(DRÁI IÓR FÊIS)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Dry%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Dry your face.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Dry your face.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Dry your face.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -768,8 +766,8 @@
                     <code class="ipa-column">/aɪ niːd ə ˈtaʊəl/</code>
                     <span class="character-portuguese-phonetics">(ÁI NÍD A TÁ-UÃL.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20need%20a%20towel.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I need a towel.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I need a towel.')" class="play-btn">▶️</button>
+                        <button onclick="speak('I need a towel.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -781,8 +779,8 @@
                     <code class="ipa-column">/lʊk ɪn ðə ˈmɪrər/</code>
                     <span class="character-portuguese-phonetics">(LÚK IN DÃ MÍ-RÃR!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Look%20in%20the%20mirror!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Look in the mirror!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Look in the mirror!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Look in the mirror!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -791,8 +789,8 @@
                     <code class="ipa-column">/aɪ æm kliːn ænd ˈʃaɪni/</code>
                     <span class="character-portuguese-phonetics">(ÁI ÉM CLÍN ÉND SHÁI-NI!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20am%20clean%20and%20shiny!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I am clean and shiny!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I am clean and shiny!')" class="play-btn">▶️</button>
+                        <button onclick="speak('I am clean and shiny!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -804,8 +802,8 @@
                     <code class="ipa-column">/juːz ðə ˈdɛntəl flɒs/</code>
                     <span class="character-portuguese-phonetics">(IÚZ DÃ DÉN-TAL FLÓS.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Use%20the%20dental%20floss.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Use the dental floss.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Use the dental floss.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Use the dental floss.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -814,8 +812,8 @@
                     <code class="ipa-column">/hɛlp miː pliːz/</code>
                     <span class="character-portuguese-phonetics">(RÉLP MÍ, PLÍZ.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Help%20me%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Help me, please.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Help me, please.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Help me, please.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -827,8 +825,8 @@
                     <code class="ipa-column">/pʊt ɪt əˈweɪ/</code>
                     <span class="character-portuguese-phonetics">(PUT IT A-UÊI.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20it%20away.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Put it away.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Put it away.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Put it away.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -837,8 +835,8 @@
                     <code class="ipa-column">/oʊˈkeɪ aɪ pʊt ɪt ɪn ðə kʌp/</code>
                     <span class="character-portuguese-phonetics">(OKÊI, ÁI PUT IT IN DÃ CÃP.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20I%20put%20it%20in%20the%20cup.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Okay, I put it in the cup.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Okay, I put it in the cup.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Okay, I put it in the cup.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -850,8 +848,8 @@
                     <code class="ipa-column">/tɜːrn ɒn ðə tæp/</code>
                     <span class="character-portuguese-phonetics">(TÃRN ÓN DÃ TÉP.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Turn%20on%20the%20tap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Turn on the tap.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Turn on the tap.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Turn on the tap.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -860,8 +858,8 @@
                     <code class="ipa-column">/ˈwɔːtər ɪz ˈrʌnɪŋ/</code>
                     <span class="character-portuguese-phonetics">(UÓ-TÃR ÍZ RÃ-NIN!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Water%20is%20running!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Water is running!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Water is running!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Water is running!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -873,8 +871,8 @@
                     <code class="ipa-column">/tɜːrn ɔːf ðə tæp/</code>
                     <span class="character-portuguese-phonetics">(TÃRN ÓF DÃ TÉP.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Turn%20off%20the%20tap.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Turn off the tap.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Turn off the tap.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Turn off the tap.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -883,8 +881,8 @@
                     <code class="ipa-column">/lɛts seɪv ˈwɔːtər/</code>
                     <span class="character-portuguese-phonetics">(LÉTS SÊIV UÓ-TÃR!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Let's%20save%20water!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Let\'s save water!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Let\'s save water!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Let\'s save water!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -896,8 +894,8 @@
                     <code class="ipa-column">/wɒʃ jʊər hændz/</code>
                     <span class="character-portuguese-phonetics">(UÓSH IÓR RÉNDS.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wash%20your%20hands.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Wash your hands.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Wash your hands.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Wash your hands.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -906,8 +904,8 @@
                     <code class="ipa-column">/skrʌb skrʌb skrʌb/</code>
                     <span class="character-portuguese-phonetics">(S-CRÃB, S-CRÃB, S-CRÃB!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Scrub%2C%20scrub%2C%20scrub!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Scrub, scrub, scrub!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Scrub, scrub, scrub!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Scrub, scrub, scrub!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -919,8 +917,8 @@
                     <code class="ipa-column">/duː juː niːd tuː piː/</code>
                     <span class="character-portuguese-phonetics">(DÚ IÚ NÍD TÚ PÍ?)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Do%20you%20need%20to%20pee%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Do you need to pee?')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Do you need to pee?')" class="play-btn">▶️</button>
+                        <button onclick="speak('Do you need to pee?', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -929,8 +927,8 @@
                     <code class="ipa-column">/noʊ aɪ doʊnt/</code>
                     <span class="character-portuguese-phonetics">(NÔU, ÁI DÔUNT.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=No%2C%20I%20don't.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('No, I don\'t.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('No, I don\'t.')" class="play-btn">▶️</button>
+                        <button onclick="speak('No, I don\'t.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -942,8 +940,8 @@
                     <code class="ipa-column">/duː juː niːd tuː puːp/</code>
                     <span class="character-portuguese-phonetics">(DÚ IÚ NÍD TÚ PÚP?)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Do%20you%20need%20to%20poop%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Do you need to poop?')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Do you need to poop?')" class="play-btn">▶️</button>
+                        <button onclick="speak('Do you need to poop?', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -952,8 +950,8 @@
                     <code class="ipa-column">/jɛs aɪ θɪŋk soʊ/</code>
                     <span class="character-portuguese-phonetics">(IÉS, ÁI THÍNK SÔU.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20I%20think%20so.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Yes, I think so.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Yes, I think so.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Yes, I think so.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -965,8 +963,8 @@
                     <code class="ipa-column">/flʌʃ ðə ˈtɔɪlɪt/</code>
                     <span class="character-portuguese-phonetics">(FLÃSH DÃ TÓI-LET.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Flush%20the%20toilet.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Flush the toilet.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Flush the toilet.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Flush the toilet.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -975,8 +973,8 @@
                     <code class="ipa-column">/baɪ baɪ puːp/</code>
                     <span class="character-portuguese-phonetics">(BÁI BÁI, PÚP!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bye%20bye%2C%20poop!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Bye bye, poop!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Bye bye, poop!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Bye bye, poop!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -988,8 +986,8 @@
                     <code class="ipa-column">/koʊm jʊər hɛər/</code>
                     <span class="character-portuguese-phonetics">(CÔUM IÓR RÉAR.)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Comb%20your%20hair.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Comb your hair.')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Comb your hair.')" class="play-btn">▶️</button>
+                        <button onclick="speak('Comb your hair.', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -998,8 +996,8 @@
                     <code class="ipa-column">/aɪ lʊk naɪs/</code>
                     <span class="character-portuguese-phonetics">(ÁI LÚK NÁIS!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20look%20nice!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('I look nice!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('I look nice!')" class="play-btn">▶️</button>
+                        <button onclick="speak('I look nice!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -1011,8 +1009,8 @@
                     <code class="ipa-column">/juː smɛl soʊ ɡʊd/</code>
                     <span class="character-portuguese-phonetics">(IÚ SMÉL SÔU GÚD!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=You%20smell%20so%20good!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('You smell so good!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('You smell so good!')" class="play-btn">▶️</button>
+                        <button onclick="speak('You smell so good!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
                 <td>
@@ -1021,8 +1019,8 @@
                     <code class="ipa-column">/θæŋk juː ˈmɒmi/</code>
                     <span class="character-portuguese-phonetics">(THÉNK IÚ, MÓ-MI!)</span>
                     <div class="btn-container">
-                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Thank%20you%2C%20Mommy!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                        <button onclick="playAudio('Thank you, Mommy!')" class="inline-play-btn">▶️</button>
+                        <button onclick="speak('Thank you, Mommy!')" class="play-btn">▶️</button>
+                        <button onclick="speak('Thank you, Mommy!', true)" class="slow-btn">🐢</button>
                     </div>
                 </td>
             </tr>
@@ -1037,24 +1035,24 @@
     <div class="dialogue">
         <p>
             <span class="character">Papai:</span> Okay, superhero! After breakfast, it's time for a mission! 
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20superhero!%20After%20breakfast%2C%20it's%20time%20for%20a%20mission!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('Okay, superhero! After breakfast, it\'s time for a mission!')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('Okay, superhero! After breakfast, it\'s time for a mission!')" class="play-btn">▶️</button>
+            <button onclick="speak('Okay, superhero! After breakfast, it\'s time for a mission!', true)" class="slow-btn">🐢</button>
             (Ok, super-herói! Depois do café, é hora de uma missão!)<br>
             <span class="ipa-phrase-block"><code>/oʊˈkeɪ ˈsuːpərˌhɪroʊ ˈæftər ˈbrɛkfəst ɪts taɪm fɔːr ə ˈmɪʃən/</code></span>
         </p>
 
         <p>
             <span class="character">Filho(a):</span> A mission? What mission?
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=A%20mission%3F%20What%20mission%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('A mission? What mission?')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('A mission? What mission?')" class="play-btn">▶️</button>
+            <button onclick="speak('A mission? What mission?', true)" class="slow-btn">🐢</button>
             (Uma missão? Que missão?)<br>
             <span class="ipa-phrase-block"><code>/ə ˈmɪʃən wɒt ˈmɪʃən/</code></span>
         </p>
 
         <p>
             <span class="character">Papai:</span> Go brush your teeth!
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Go%20brush%20your%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('Go brush your teeth!')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('Go brush your teeth!')" class="play-btn">▶️</button>
+            <button onclick="speak('Go brush your teeth!', true)" class="slow-btn">🐢</button>
             (Vá escovar seus dentes!)<br>
             <span class="ipa-phrase-block"><code>/ɡoʊ brʌʃ jʊər tiːθ/</code></span>
         </p>
@@ -1064,16 +1062,16 @@
     <div class="dialogue">
         <p>
             <span class="character">Filho(a):</span> I don't want to!
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20don't%20want%20to!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('I don\'t want to!')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('I don\'t want to!')" class="play-btn">▶️</button>
+            <button onclick="speak('I don\'t want to!', true)" class="slow-btn">🐢</button>
             (Eu não quero!)<br>
             <span class="ipa-phrase-block"><code>/aɪ doʊnt wɒnt tuː/</code></span>
         </p>
 
         <p>
             <span class="character">Mamãe:</span> But the sugar bugs will have a party in your mouth! Let's get them!
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=But%20the%20sugar%20bugs%20will%20have%20a%20party%20in%20your%20mouth!%20Let's%20get%20them!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('But the sugar bugs will have a party in your mouth! Let\'s get them!')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('But the sugar bugs will have a party in your mouth! Let\'s get them!')" class="play-btn">▶️</button>
+            <button onclick="speak('But the sugar bugs will have a party in your mouth! Let\'s get them!', true)" class="slow-btn">🐢</button>
             (Mas os bichinhos de açúcar vão fazer uma festa na sua boca! Vamos pegar eles!)<br>
             <span class="ipa-phrase-block"><code>/bʌt ðə ˈʃʊɡər bʌɡz wɪl hæv ə ˈpɑːrti ɪn jʊər maʊθ lɛts ɡɛt ðɛm/</code></span>
         </p>
@@ -1083,24 +1081,24 @@
     <div class="dialogue">
         <p>
             <span class="character">Papai:</span> Okay, teeth are clean! Now, let's wash your face.
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Okay%2C%20teeth%20are%20clean!%20Now%2C%20let's%20wash%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('Okay, teeth are clean! Now, let\'s wash your face.')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('Okay, teeth are clean! Now, let\'s wash your face.')" class="play-btn">▶️</button>
+            <button onclick="speak('Okay, teeth are clean! Now, let\'s wash your face.', true)" class="slow-btn">🐢</button>
             (Ok, dentes limpos! Agora, vamos lavar o rosto.)<br>
             <span class="ipa-phrase-block"><code>/oʊˈkeɪ tiːθ ɑːr kliːn naʊ lɛts wɒʃ jʊər feɪs/</code></span>
         </p>
         
         <p>
             <span class="character">Filho(a):</span> With soap?
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=With%20soap%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('With soap?')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('With soap?')" class="play-btn">▶️</button>
+            <button onclick="speak('With soap?', true)" class="slow-btn">🐢</button>
             (Com sabonete?)<br>
             <span class="ipa-phrase-block"><code>/wɪð soʊp/</code></span>
         </p>
         
         <p>
             <span class="character">Papai:</span> Yes! And then dry with the big, fluffy towel!
-            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes!%20And%20then%20dry%20with%20the%20big%2C%20fluffy%20towel!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-            <button onclick="playAudio('Yes! And then dry with the big, fluffy towel!')" class="inline-play-btn">▶️</button>
+            <button onclick="speak('Yes! And then dry with the big, fluffy towel!')" class="play-btn">▶️</button>
+            <button onclick="speak('Yes! And then dry with the big, fluffy towel!', true)" class="slow-btn">🐢</button>
             (Sim! E depois secar com a toalha grande e fofinha!)<br>
             <span class="ipa-phrase-block"><code>/jɛs ænd ðɛn draɪ wɪð ðə bɪɡ ˈflʌfi ˈtaʊəl/</code></span>
         </p>
@@ -1114,13 +1112,11 @@
         <ul>
             <li>
                 <span class="example-word">Tooth</span> <span class="ipa-symbol">/tuːθ/</span> (TÚTH... com a língua entre os dentes) 
-                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Tooth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                <button onclick="playAudio('Tooth')" class="inline-play-btn">▶️</button>
+                <button onclick="speak('Tooth')" class="play-btn">▶️</button>
             </li>
             <li>
                 <span class="example-word">Mouth</span> <span class="ipa-symbol">/maʊθ/</span> (MÁUTH... com a língua entre os dentes) 
-                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Mouth&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                <button onclick="playAudio('Mouth')" class="inline-play-btn">▶️</button>
+                <button onclick="speak('Mouth')" class="play-btn">▶️</button>
             </li>
         </ul>
     </div>
@@ -1133,8 +1129,8 @@
         <ul class="exercise-list">
             <li>
                 <p>Monstrinho diz: "I want to make your teeth dirty!" 
-                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20want%20to%20make%20your%20teeth%20dirty!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                    <button onclick="playAudio('I want to make your teeth dirty!')" class="inline-play-btn">▶️</button>
+                    <button onclick="speak('I want to make your teeth dirty!')" class="play-btn">▶️</button>
+                    <button onclick="speak('I want to make your teeth dirty!', true)" class="slow-btn">🐢</button>
                     <br>
                     <span class="ipa-phrase-block"><code>/aɪ wɒnt tuː meɪk jʊər tiːθ ˈdɜːrti/</code></span>
                     (Eu quero deixar seus dentes sujos!)
@@ -1142,8 +1138,8 @@
             </li>
             <li>
                 <p>Herói/Heroína responde: "No! I will <span class="example-word">brush my teeth</span>!" 
-                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=No!%20I%20will%20brush%20my%20teeth!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                    <button onclick="playAudio('No! I will brush my teeth!')" class="inline-play-btn">▶️</button>
+                    <button onclick="speak('No! I will brush my teeth!')" class="play-btn">▶️</button>
+                    <button onclick="speak('No! I will brush my teeth!', true)" class="slow-btn">🐢</button>
                     <br>
                     <span class="ipa-phrase-block"><code>/noʊ aɪ wɪl brʌʃ maɪ tiːθ/</code></span>
                     (Não! Eu vou escovar meus dentes!) - e começa a escovar de verdade!
@@ -1151,8 +1147,8 @@
             </li>
             <li>
                 <p>Monstrinho diz: "Oh no! Too much foam!" 
-                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Oh%20no!%20Too%20much%20foam!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
-                    <button onclick="playAudio('Oh no! Too much foam!')" class="inline-play-btn">▶️</button>
+                    <button onclick="speak('Oh no! Too much foam!')" class="play-btn">▶️</button>
+                    <button onclick="speak('Oh no! Too much foam!', true)" class="slow-btn">🐢</button>
                     <br>
                     <span class="ipa-phrase-block"><code>/oʊ noʊ tuː mʌtʃ foʊm/</code></span>
                     (Ah não! Muita espuma!) - e foge!
@@ -1168,19 +1164,34 @@
 
 </div>
 
-<!-- Script para fazer o botão de áudio Inline funcionar -->
 <script>
-    function playAudio(text) {
-        // Cria o link do Google TTS
-        var audioUrl = "https://translate.google.com/translate_tts?ie=UTF-8&q=" + encodeURIComponent(text) + "&tl=en&client=tw-ob";
-        
-        // Cria um novo objeto de áudio e toca
-        var audio = new Audio(audioUrl);
-        audio.play().catch(function(error) {
-            console.log("Erro ao reproduzir áudio: " + error);
-            alert("Não foi possível reproduzir o áudio automaticamente. Por favor, use o botão laranja (🔗).");
-        });
+    function speak(text, slow = false) {
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            if (slow) {
+                utterance.rate = 0.6; // Velocidade mais lenta
+            } else {
+                utterance.rate = 1; // Velocidade normal
+            }
+            
+            // Tenta selecionar uma voz em inglês
+            const voices = window.speechSynthesis.getVoices();
+            const enVoice = voices.find(v => v.lang.startsWith('en-'));
+            if (enVoice) {
+                utterance.voice = enVoice;
+            }
+
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert("Seu navegador não suporta áudio nativo. Tente usar o Google Chrome.");
+        }
     }
+
+    // Carrega as vozes (necessário para alguns navegadores)
+    window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+    };
 </script>
 
 </body>
